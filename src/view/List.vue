@@ -19,7 +19,7 @@ export default {
     }
   },
    created(){
-    axios.get('https://api-m.mtime.cn/Showtime/LocationMovies.api?locationId=290')
+    axios.get('https://api-m.mtime.cn/Showtime/LocationMovies.api?locationId='+this.$route.query.id)
     .then((res)=>(this.movie=res.data.ms))
   }
 

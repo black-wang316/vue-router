@@ -23,6 +23,11 @@ const router = new VueRouter({
       component: () => import("./view/Detail"),
     },
     {
+      path: "/load",
+      name: "Load",
+      component: () => import("./view/load"),
+    },
+    {
       path: "/cart",
       name: "Cart",
       component: () => import("./view/Cart"),
